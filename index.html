@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            border: 2px solid black;
+            width:300px ;
+            background: linear-gradient(to bottom, rgb(252, 252, 252), rgb(142, 142, 145));
+            box-sizing: border-box;
+        }
+        .header, .nav, .main, .aside, .footer {
+            box-sizing: border-box;
+            margin: 10px;
+            padding: 10px;
+        }
+        .header {
+            border: 2px solid rgb(58, 137, 255);
+            background: linear-gradient(to bottom, rgb(255, 255, 255), rgb(149, 177, 255));
+            width: 100%;
+        }
+        .nav {
+            border: 2px solid rgb(57, 150, 21);
+            background: linear-gradient(to bottom, rgb(255, 255, 255), rgb(154, 255, 154));
+            width: 100%;
+        }
+        .main {
+            flex: 2;
+            border: 2px solid rgb(57, 150, 21);
+            background: linear-gradient(to bottom, rgb(255, 255, 255), rgb(154, 255, 154));
+            margin: 10px;
+            height: 180px;
+        }
+        .main .section {
+            margin: 10px ;
+            height: 120px;
+            width: 130px;
+        }
+        .section .article {
+            border: 2px solid rgb(207, 0, 0);
+            background: linear-gradient(to bottom, rgb(255, 255, 255), rgb(255, 147, 147));
+            margin: 10px ;
+        }
+        .aside {
+            flex: 1;
+            border: 2px solid rgb(219, 223, 11);
+            background: linear-gradient(to bottom, rgb(255, 255, 255), rgb(255, 253, 147));
+        }
+        .footer {
+            border: 2px solid rgb(0, 90, 173);
+            background: linear-gradient(to bottom, rgb(255, 255, 255), rgb(147, 190, 255));
+            width: 100%;
+        }
+        .section{
+            border: 2px solid rgb(202, 66, 255);
+    background: linear-gradient(to bottom, rgb(255, 255, 255), rgb(215, 147, 255));
+    height: 105px;
+    margin: 10px;
+        }
+        .article{
+            height: 30px ;
+            width: 100px;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <a href="page2.html">Page 2</a>
+    <div class="container">&nbsp;&nbsp;&nbsp;&#10094;body&#10095;
+        <div class="header">&#10094;header&#10095;</div>
+        <div class="nav">&#10094;nav&#10095;</div>
+        <div class="main">&nbsp;&nbsp;&nbsp;&#10094;main&#10095;
+            <div class="section">&#10094;section&#10095;
+                <div class="article">&#10094;article&#10095;</div>
+                <div class="article">&#10094;article&#10095;</div>
+            </div>
+        </div>
+        <div class="aside">&#10094;aside&#10095;</div>
+        <div class="footer">&#10094;footer&#10095;</div>
+    </div>
+</body>
+</html>
